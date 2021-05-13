@@ -1,0 +1,13 @@
+<html>
+<head>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <div id='divPlotly'></div>
+    <script>
+        var plotly_data = {"data":[{"hovertemplate":"Year=%{x}<br>od_pm=%{y}<extra></extra>","legendgroup":"","line":{"color":"#990000","dash":"solid"},"mode":"lines","name":"","orientation":"v","showlegend":false,"type":"scatter","x":[2005.0,2006.0,2007.0,2008.0,2009.0,2010.0,2011.0,2012.0,2013.0,2014.0,2015.0,2016.0,2017.0],"xaxis":"x","y":[0.0008568711065919094,0.0011404363765751327,0.0013278998202023644,0.0018942664060282376,0.0025548229521887597,0.0024590706604496314,0.000947188554931253,0.0015216583336852168,0.002677556672160439,0.003557329049668197,0.005213323400986824,0.002905441815041124,0.004951312097705892],"yaxis":"y"}],"layout":{"legend":{"tracegroupgap":0},"margin":{"t":60},"template":{"layout":{"colorway":["#990000","#2F3EEA","#1FD082","#030F4F","#F6D04D","#FC7634","#F7BBB1","#DADADA","#E83F48","#79238E"]}},"xaxis":{"anchor":"y","domain":[0.0,1.0],"title":{"text":"Year"}},"yaxis":{"anchor":"x","domain":[0.0,1.0],"range":[0,0.025],"title":{"text":"od_pm"}}}}
+        Plotly.react('divPlotly', plotly_data.data, plotly_data.layout);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+<html>
+<head>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <div id='divPlotly'></div>
+    <script>
+        var plotly_data = {"data":[{"hovertemplate":"Year=%{x}<br>Infected=%{y}<extra></extra>","legendgroup":"","line":{"color":"#990000","dash":"solid"},"mode":"lines","name":"","orientation":"v","showlegend":false,"type":"scatter","x":[2009,2010,2011,2012,2013,2014,2015,2016,2017,2018],"xaxis":"x","y":[3182.0,2979.0,3083.0,3312.0,2758.0,2217.0,2015.0,1691.0,1571.0,1316.0],"yaxis":"y"}],"layout":{"legend":{"tracegroupgap":0},"template":{"layout":{"colorway":["#990000","#2F3EEA","#1FD082","#030F4F","#F6D04D","#FC7634","#F7BBB1","#DADADA","#E83F48","#79238E"]}},"title":{"text":"Infectious diseases per year"},"xaxis":{"anchor":"y","domain":[0.0,1.0],"title":{"text":"Year"}},"yaxis":{"anchor":"x","domain":[0.0,1.0],"title":{"text":"Infected"}}}}
+        Plotly.react('divPlotly', plotly_data.data, plotly_data.layout);
+    </script>
+</body>
+
+</html>
