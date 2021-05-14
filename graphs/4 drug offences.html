@@ -1,0 +1,13 @@
+<html>
+<head>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <div id='divPlotly'></div>
+    <script>
+        var plotly_data = {"data":[{"hovertemplate":"Year: %{x}<br>Offences %{y}","legendgroup":"","line":{"color":"#990000","dash":"solid"},"mode":"lines","name":"","orientation":"v","showlegend":false,"type":"scatter","x":["2007","2008","2009","2010","2011","2012","2013","2014","2015","2016","2017","2018"],"xaxis":"x","y":[1273473.0,1021826.0,1042880.0,1101031.0,948362.0,967360.0,926322.0,1196541.0,892852.0,1576722.0,1669306.0,1609698.0],"yaxis":"y"}],"layout":{"font":{"color":"Black","family":"Segoe UI","size":14},"legend":{"title":{"text":"Countries"},"tracegroupgap":0},"margin":{"t":60},"plot_bgcolor":"white","template":{"layout":{"colorway":["#990000","#2F3EEA","#1FD082","#030F4F","#F6D04D","#FC7634","#F7BBB1","#DADADA","#E83F48","#79238E"]}},"title":{"text":"<b>Number of drug offences per year</b>","x":0.5},"xaxis":{"anchor":"y","domain":[0.0,1.0],"showgrid":false,"title":{"text":"Year"}},"yaxis":{"anchor":"x","domain":[0.0,1.0],"showgrid":false,"title":{"text":"Offences"}}}}
+        Plotly.newPlot('divPlotly', plotly_data);
+    </script>
+</body>
+
+</html>
