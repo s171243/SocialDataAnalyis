@@ -1,0 +1,13 @@
+<html>
+<head>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <div id='divPlotly'></div>
+    <script>
+        var plotly_data = {"data":[{"hovertemplate":"Eastern Countries<br>Year: %{x}<br>Infected: %{y}<extra></extra>","legendgroup":"False","line":{"color":"#990000","dash":"solid"},"mode":"lines","name":"Eastern Countries","orientation":"v","showlegend":true,"type":"scatter","x":[2009,2010,2011,2012,2013,2014,2015,2016,2017,2018],"xaxis":"x","y":[609.0,645.0,822.0,925.0,898.0,748.0,684.0,572.0,571.0,422.0],"yaxis":"y"},{"hovertemplate":"Western Countries<br>Year: %{x}<br>Infected: %{y}<extra></extra>","legendgroup":"True","line":{"color":"#2F3EEA","dash":"solid"},"mode":"lines","name":"Western Countries","orientation":"v","showlegend":true,"type":"scatter","x":[2009,2010,2011,2012,2013,2014,2015,2016,2017,2018],"xaxis":"x","y":[2573.0,2334.0,2261.0,2387.0,1860.0,1469.0,1331.0,1119.0,1000.0,894.0],"yaxis":"y"}],"layout":{"font":{"color":"Black","family":"Segoe UI","size":14},"legend":{"title":{"text":"Countries"},"tracegroupgap":0},"plot_bgcolor":"white","template":{"layout":{"colorway":["#990000","#2F3EEA","#1FD082","#030F4F","#F6D04D","#FC7634","#F7BBB1","#DADADA","#E83F48","#79238E"]}},"title":{"text":"<b>Infectious diseases are decreasing in Europe</b>"},"xaxis":{"anchor":"y","domain":[0.0,1.0],"showgrid":false,"title":{"text":"Infected per year"}},"yaxis":{"anchor":"x","domain":[0.0,1.0],"showgrid":false,"title":{"text":"Infectious diseases per year in Europe"}}}}
+        Plotly.newPlot('divPlotly', plotly_data);
+    </script>
+</body>
+
+</html>
