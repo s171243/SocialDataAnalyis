@@ -1,0 +1,13 @@
+<html>
+<head>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <div id='divPlotly'></div>
+    <script>
+        var plotly_data = {"data":[{"hovertemplate":"Year: %{x}<br>ODs per thousand %{y}","mode":"lines","name":"Portugal ODs per 1000 inhabitants","type":"scatter","x":[2017.0,2016.0,2015.0,2014.0,2013.0,2012.0,2011.0,2010.0,2009.0,2008.0,2007.0,2006.0,2005.0],"y":[0.004951312097705892,0.002905441815041124,0.005213323400986824,0.003557329049668197,0.002677556672160439,0.0015216583336852168,0.000947188554931253,0.0024590706604496314,0.0025548229521887597,0.0018942664060282376,0.0013278998202023644,0.0011404363765751327,0.0008568711065919094]},{"hovertemplate":"Year: %{x}<br>ODs per thousand %{y}","mode":"lines","name":"EU ODs per 1000 inhabitants","type":"scatter","x":[2005.0,2006.0,2007.0,2008.0,2009.0,2010.0,2011.0,2012.0,2013.0,2014.0,2015.0,2016.0,2017.0],"y":[0.015656204040882655,0.014344081165979967,0.018878191499907528,0.017728608543687532,0.014262744137875222,0.012133025326881956,0.010605322274897067,0.009919290591320112,0.008644350300391172,0.009788970871938274,0.012846119663032007,0.011525684411426644,0.014428323752374534]}],"layout":{"font":{"color":"Black","family":"Segoe UI","size":14},"legend":{"title":{"text":"Countries"}},"plot_bgcolor":"white","template":{"layout":{"colorway":["#990000","#2F3EEA","#1FD082","#030F4F","#F6D04D","#FC7634","#F7BBB1","#DADADA","#E83F48","#79238E"]}},"title":{"text":"<b>Portugal has 1/10th of the average OD per thousand</b>","x":0.5},"xaxis":{"showgrid":false,"title":{"text":"Year"}},"yaxis":{"showgrid":false,"title":{"text":"ODs per thousand"}}}}
+        Plotly.newPlot('divPlotly', plotly_data);
+    </script>
+</body>
+
+</html>
